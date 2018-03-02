@@ -1,0 +1,1 @@
+﻿Get-ADGroupMember "Сотрудники офиса" |get-aduser -Properties * | select mail,name,extensionAttribute1,extensionAttribute2,extensionAttribute3   | Export-Csv -Path g:\study\ad\officeout.csv -Encoding unicode -NoTypeInformation
